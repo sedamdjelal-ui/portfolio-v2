@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sedam Djellal — Brand Identity Designer</title>
+<meta name="description" content="بورتفوليو سدام جلال، مصمم هوية بصرية">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand">Djellal<span>.</span></div>
+    <nav class="nav__links">
+      <a href="#work">أعمالي</a>
+      <a href="#about">نبذة</a>
+      <a href="#services">خدماتي</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__tag">Brand Identity Designer</p>
+        <h1>أصمم هويات بصرية<br> تترك أثراً.</h1>
+        <p class="hero__desc">مصمم هوية بصرية من الجزائر، أحوّل أفكار العلامات التجارية إلى تصاميم بصرية واضحة ومؤثرة.</p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn--primary">شاهد أعمالي</a>
+          <a href="#contact" class="btn btn--ghost">تواصل معي</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2 class="section__title">أعمال مختارة</h2>
+      <div class="grid" id="workGrid">
+        <article class="card">
+          <div class="card__img" style="background:linear-gradient(135deg,#ff6b6b,#f7b733)"></div>
+          <h3>هوية مطعم أورا</h3>
+          <p>شعار وهوية بصرية كاملة لمطعم فاخر</p>
+        </article>
+        <article class="card">
+          <div class="card__img" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"></div>
+          <h3>تطبيق نبض</h3>
+          <p>تصميم واجهة وهوية لتطبيق صحي</p>
+        </article>
+        <article class="card">
+          <div class="card__img" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"></div>
+          <h3>علامة لومينا</h3>
+          <p>هوية بصرية لمتجر مستحضرات تجميل</p>
+        </article>
+        <article class="card">
+          <div class="card__img" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"></div>
+          <h3>استوديو فيكتور</h3>
+          <p>شعار وهوية لاستوديو تصوير</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section section--alt">
+      <h2 class="section__title">نبذة عني</h2>
+      <p class="about__text">
+        أنا سدام جلال، مصمم هوية بصرية من الجزائر، أعمل تحت استوديو Djellal Design Studio.
+        متخصص في بناء هويات بصرية متكاملة: من الشعار إلى دليل الهوية الكامل، مع خبرة متنامية
+        في تطوير الواجهات (Next.js, React) لربط التصميم بتجربة رقمية حقيقية.
+      </p>
+    </section>
+
+    <section id="services" class="section">
+      <h2 class="section__title">خدماتي</h2>
+      <div class="services">
+        <div class="service"><h3>تصميم الشعارات</h3><p>شعارات مميزة تعكس هوية علامتك</p></div>
+        <div class="service"><h3>الهوية البصرية الكاملة</h3><p>دليل هوية شامل (ألوان، خطوط، تطبيقات)</p></div>
+        <div class="service"><h3>تصميم واجهات</h3><p>واجهات ويب عصرية متجاوبة</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <h2 class="section__title">تواصل معي</h2>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="رسالتك" rows="5" required></textarea>
+        <button type="submit" class="btn btn--primary">إرسال</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Djellal Design Studio. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
